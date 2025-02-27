@@ -1,7 +1,7 @@
 import React from "react";
-import Logo from "./../assets/Logo.png";
-import LinkedInIcon from "./svg-components/LinkedInIcon";
-import InstagramIcon from "./svg-components/InstagramIcon";
+import Logo from "./../../assets/Logo.png";
+import LinkedInIcon from "../svg-components/LinkedInIcon";
+import InstagramIcon from "../svg-components/InstagramIcon";
 
 const Footer = () => {
   return (

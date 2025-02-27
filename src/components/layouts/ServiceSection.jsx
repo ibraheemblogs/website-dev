@@ -1,11 +1,11 @@
 import React from "react";
-import ServiceCard from "./ServiceCard";
-import ProductDevIcon from "./svg-components/ProductDevIcon";
-import ShariaCompliantIcon from "./svg-components/ShariaCompliantIcon";
-import TrainingIcon from "./svg-components/TrainingIcon";
-import AuditIcon from "./svg-components/AuditIcon";
-import ResearchIcon from "./svg-components/ResearchIcon";
-import ShariaCertificationIcon from "./svg-components/ShariaCertificationIcon";
+import ServiceCard from "../ServiceCard";
+import ProductDevIcon from "../svg-components/ProductDevIcon";
+import ShariaCompliantIcon from "../svg-components/ShariaCompliantIcon";
+import TrainingIcon from "../svg-components/TrainingIcon";
+import AuditIcon from "../svg-components/AuditIcon";
+import ResearchIcon from "../svg-components/ResearchIcon";
+import ShariaCertificationIcon from "../svg-components/ShariaCertificationIcon";
 
 const ServiceSection = () => {
   const services = [
@@ -47,8 +47,8 @@ const ServiceSection = () => {
     },
   ];
   return (
-    <section className="py-16 px-20 bg-gray-50 w-full">
-      <div className="max-w-screen px-4 mx-auto">
+    <section className="py-16 px-3 md:px-20 bg-gray-50 w-full">
+      <div className="max-w-screen px-1 md:px-4 mx-auto">
         <h2 className="text-3xl font-bold text-center mb-6">Our Services</h2>
         <p className="text-gray-600 text-center mb-12">
           We offer support to companies in the following service areas
