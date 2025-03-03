@@ -35,7 +35,7 @@ const App = () => {
       </header>
 
       {/* Why ShariaLabs Section */}
-      <section className="py-16 w-full px-3 md:px-20 bg-yellow-50 pb-40">
+      <section className="py-16 w-full px-3 md:px-20 bg-[#FDF9F1] pb-40">
         <div className="max-w-screen px-1 md:px-4 mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-6 md:gap-20">
             <div className="hidden md:block md:w-1/2">
@@ -59,7 +59,12 @@ const App = () => {
                 </span>
               </p>
 
-              <button className="hidden md:block bg-yellow-500 px-6 py-2 rounded-md hover:bg-yellow-600">
+              <button
+                onClick={() =>
+                  (window.location.href = "mailto:admin@sharialabs.com")
+                }
+                className="hidden md:block bg-yellow-500 px-6 py-2 rounded-md hover:bg-yellow-600"
+              >
                 Contact Us
               </button>
             </div>
@@ -69,7 +74,12 @@ const App = () => {
                 alt="Signing documents"
                 className="rounded-lg w-full h-105"
               />
-              <button className="mt-6 bg-yellow-500 px-6 py-2 rounded-md hover:bg-yellow-600 mx-auto block">
+              <button
+                onClick={() =>
+                  (window.location.href = "mailto:admin@sharialabs.com")
+                }
+                className="mt-6 bg-yellow-500 px-6 py-2 rounded-md hover:bg-yellow-600 mx-auto block"
+              >
                 Contact Us
               </button>
             </div>
@@ -92,9 +102,12 @@ const App = () => {
                 Partner with us to review your contracts and operations for
                 complete peace of mind.
               </p>
-              <button className="bg-white text-yellow-500 px-8 py-3 rounded-md hover:bg-gray-100 mx-auto block md:mx-0 md:block">
+              <a
+                href="mailto:admin@sharialabs.com"
+                className="bg-white text-yellow-500 px-8 py-3 rounded-md hover:bg-gray-100 w-fit mx-auto md:mx-0 block md:inline-block"
+              >
                 Contact Us Now
-              </button>
+              </a>
             </div>
             <div className="md:w-1/2">
               <img

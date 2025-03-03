@@ -47,7 +47,10 @@ const ServiceSection = () => {
     },
   ];
   return (
-    <section className="py-16 px-3 md:px-20 bg-gray-50 w-full">
+    <section
+      className="py-16 px-3 md:px-20 bg-gray-50 w-full"
+      id="sharialab-services"
+    >
       <div className="max-w-screen px-1 md:px-4 mx-auto">
         <h2 className="text-3xl font-bold text-center mb-6">Our Services</h2>
         <p className="text-gray-600 text-center mb-12">
