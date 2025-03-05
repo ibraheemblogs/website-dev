@@ -29,7 +29,7 @@ const ServiceSection = () => {
     },
     {
       icon: <AuditIcon />,
-      title: "Sharia Compliance Audit",
+      title: "Sharia Audit",
       description:
         "We verify adherence to Islamic principles and review contracts and documentation for Sharia compliance.",
     },
