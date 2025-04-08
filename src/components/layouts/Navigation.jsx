@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router";
 import MenuIcon from "../svg-components/MenuIcon";
 import ShariaLabsLogo from "../ShariaLabsLogo";
 
@@ -47,11 +48,20 @@ const Navigation = () => {
             >
               Blog
             </a>
+            <NavLink
+              to="contact-us"
+              className="text-gray-600 hover:text-gray-900 w-full md:w-auto md:hidden"
+            >
+              Contact Us
+            </NavLink>
           </div>
           <div className="hidden md:block">
-            <button className="border-2 border-green-600 text-green-600 px-6 py-2 rounded-md hover:bg-green-600 hover:text-white">
+            <NavLink
+              to="contact-us"
+              className="border-2 border-green-600 text-green-600 px-6 py-2 rounded-md hover:bg-green-600 hover:text-white"
+            >
               Contact Us
-            </button>
+            </NavLink>
           </div>
         </div>
       </div>

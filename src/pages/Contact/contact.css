@@ -1,0 +1,20 @@
+.left-content-bg{
+  background-color: #FFF7E6;   
+}
+.right-content-bg {
+    background-color: #FEF8ED;
+}
+.inner-right-bg {
+   background-color: #FFFCF8;
+}
+.calendly-container {
+  overflow: hidden;
+  max-width: 100%;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+
+.calendly-container iframe {
+  width: 100% !important;
+  min-width: 0 !important;
+}

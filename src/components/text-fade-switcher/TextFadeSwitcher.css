@@ -1,0 +1,32 @@
+
+.text-switcher-wrapper {
+    display: inline-block;
+    position: relative;
+    min-width: 280px; 
+}
+  
+.text-switcher-item {
+    display: inline-block;
+}
+  
+.fade-out {
+    animation: fadeOut 3s forwards;
+}
+  
+.fade-in {
+    animation: fadeIn 3s forwards;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+  
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+  
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+  
