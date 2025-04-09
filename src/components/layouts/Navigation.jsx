@@ -72,7 +72,7 @@ const Navigation = () => {
           </div>
           <div className="hidden md:block">
             <NavLink
-              to="contact-us"
+              to="/contact-us"
               className="border-2 border-green-600 text-green-600 px-6 py-2 rounded-md hover:bg-green-600 hover:text-white"
             >
               Contact Us
