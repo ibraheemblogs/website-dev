@@ -27,9 +27,18 @@ const Navigation = () => {
               isMenuOpen ? "flex" : "hidden"
             } md:flex flex-col md:flex-row absolute md:static top-20 left-0 w-full md:w-auto bg-white md:bg-transparent py-4 md:py-0 px-4 md:px-0 shadow-lg md:shadow-none items-start md:items-center gap-4 md:gap-8 z-50`}
           >
-            <a href="/" className="text-green-600 w-full md:w-auto">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                `${
+                  isActive
+                    ? "text-green-600"
+                    : "text-gray-600 hover:text-gray-900"
+                } w-full md:w-auto`
+              }
+            >
               Home
-            </a>
+            </NavLink>
             {/* <a
               href="#"
               className="text-gray-600 hover:text-gray-900 w-full md:w-auto"
@@ -49,8 +58,14 @@ const Navigation = () => {
               Blog
             </a>
             <NavLink
-              to="contact-us"
-              className="text-gray-600 hover:text-gray-900 w-full md:w-auto md:hidden"
+              to="/contact-us"
+              className={({ isActive }) =>
+                `${
+                  isActive
+                    ? "text-green-600"
+                    : "text-gray-600 hover:text-gray-900"
+                } w-full md:w-auto md:hidden`
+              }
             >
               Contact Us
             </NavLink>

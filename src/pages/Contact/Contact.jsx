@@ -34,7 +34,7 @@ const ContactPage = () => {
                 Our friendly team is here to help.
               </p>
               <p className="text-gray-800 font-medium ml-8 mt-1">
-                info@sharialabs.com
+                admin@sharialabs.com
               </p>
             </div>
 
@@ -68,11 +68,11 @@ const ContactPage = () => {
                   height: "700px",
                   width: "100%",
                 }}
-                // pageSettings={{
-                //   backgroundColor: "ffffff",
-                //   hideEventTypeDetails: false,
-                //   hideLandingPageDetails: false,
-                // }}
+                pageSettings={{
+                  backgroundColor: "ffffff",
+                  hideEventTypeDetails: false,
+                  hideLandingPageDetails: false,
+                }}
               />
             </div>
           </div>
