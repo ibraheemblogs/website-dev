@@ -6,11 +6,11 @@ import { InlineWidget } from "react-calendly";
 import Footer from "../../components/layouts/Footer";
 import ChatIcon from "../../components/svg-components/ChatIcon";
 import PhoneIcon from "../../components/svg-components/PhoneIcon";
+import PageLayout from "../../components/layouts/PageLayout";
 
 const ContactPage = () => {
   return (
-    <div className="min-h-screen w-full">
-      <Navigation />
+    <PageLayout hideFooterOnLargeScreen>
       <div className="flex flex-col md:flex-row">
         {/* Left Section */}
         <div className="w-full md:w-2/5 p-8 md:p-16 flex flex-col left-content-bg">
@@ -78,10 +78,7 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
-      <div className="md:hidden">
-        <Footer />
-      </div>
-    </div>
+    </PageLayout>
   );
 };
 

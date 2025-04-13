@@ -7,7 +7,7 @@ import AuditIcon from "../svg-components/AuditIcon";
 import ResearchIcon from "../svg-components/ResearchIcon";
 import ShariaCertificationIcon from "../svg-components/ShariaCertificationIcon";
 
-const ServiceSection = () => {
+const ServiceSection = ({ headerText }) => {
   const services = [
     {
       icon: <ProductDevIcon />,
@@ -53,9 +53,7 @@ const ServiceSection = () => {
     >
       <div className="max-w-screen px-1 md:px-4 mx-auto">
         <h2 className="text-3xl font-bold text-center mb-6">Our Services</h2>
-        <p className="text-gray-600 text-center mb-12">
-          We offer support to companies in the following service areas
-        </p>
+        <p className="text-gray-600 text-center mb-12">{headerText}</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 grey-background">
           {services.map((service, index) => (
             <ServiceCard key={index} {...service} />

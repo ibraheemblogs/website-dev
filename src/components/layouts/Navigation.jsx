@@ -39,18 +39,32 @@ const Navigation = () => {
             >
               Home
             </NavLink>
-            {/* <a
-              href="#"
-              className="text-gray-600 hover:text-gray-900 w-full md:w-auto"
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                `${
+                  isActive
+                    ? "text-green-600"
+                    : "text-gray-600 hover:text-gray-900"
+                } w-full md:w-auto`
+              }
             >
               About Us
-            </a> */}
-            <a
-              href="#sharialab-services"
-              className="text-gray-600 hover:text-gray-900 w-full md:w-auto"
+            </NavLink>
+
+            <NavLink
+              to="/services"
+              className={({ isActive }) =>
+                `${
+                  isActive
+                    ? "text-green-600"
+                    : "text-gray-600 hover:text-gray-900"
+                } w-full md:w-auto`
+              }
             >
               Services
-            </a>
+            </NavLink>
+
             <a
               href="https://www.linkedin.com/company/sharia-labs/posts"
               className="text-gray-600 hover:text-gray-900 w-full md:w-auto"

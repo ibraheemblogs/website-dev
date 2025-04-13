@@ -3,12 +3,11 @@ import { AnimatePresence, motion } from "motion/react";
 import WhyShariaLabs from "./assets/Frame-239419.png";
 import WhyShariaLabsSmall from "./assets/Frame-8470831.png";
 import HeaderPicture from "./assets/Frame-239412.png";
-import Navigation from "./components/layouts/Navigation";
 import ServiceSection from "./components/layouts/ServiceSection";
-import Footer from "./components/layouts/Footer";
 import "./App.css";
 import TextFadeSwitcher from "./components/text-fade-switcher/TextFadeSwitcher";
 import { Link } from "react-router";
+import PageLayout from "./components/layouts/PageLayout";
 
 const App = () => {
   const [activeText, setActiveText] = useState(0);
@@ -22,9 +21,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white w-full">
-      <Navigation />
-
+    <PageLayout>
       {/* Header Section */}
       <header className="bg-white pt-6 w-full mb-20">
         <div className="max-w-screen px-3 md:px-4 mx-auto">
@@ -110,10 +107,10 @@ const App = () => {
         </div>
       </section>
 
-      <ServiceSection />
+      <ServiceSection headerText="We offer support to companies in the following service areas" />
 
       {/* CTA Section */}
-      <section className=" py-16 px-3 md:px-20 w-full call-to-action-section">
+      <section className="py-16 px-3 md:px-20 w-full call-to-action-section">
         <div className="max-w-screen px-1 md:px-4 mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="md:w-1/2">
@@ -126,7 +123,7 @@ const App = () => {
                 complete peace of mind.
               </p>
               <Link
-                to="contact-us"
+                to="/contact-us"
                 className="bg-white text-yellow-500 px-8 py-3 rounded-md hover:bg-gray-100 w-fit mx-auto md:mx-0 block md:inline-block"
               >
                 Contact Us Now
@@ -144,10 +141,7 @@ const App = () => {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <Footer />
-    </div>
+    </PageLayout>
   );
 };
 
