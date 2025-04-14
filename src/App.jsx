@@ -41,7 +41,10 @@ const App = () => {
             </AnimatePresence>{" "}
             <span>in</span>
             <br />
-            <span className="text-yellow-500">Shariah-Compliant</span> Solutions
+            <span style={{ color: "var(--color-yellow-500)" }}>
+              Shariah-Compliant
+            </span>{" "}
+            Solutions
           </h1>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto text-center text-2xl">
             Expert guidance, tailored solutions, and impactful research driving

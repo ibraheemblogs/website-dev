@@ -13,8 +13,10 @@ const About = () => {
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-extrabold mb-4 ">
             We are dedicated to fostering excellence in{" "}
-            <span className="text-amber-500">Sharia-compliant</span> products,
-            services, and processes
+            <span style={{ color: "var(--color-yellow-500)" }}>
+              Sharia-compliant
+            </span>{" "}
+            products, services, and processes
           </h1>
           <p className="text-gray-700 mt-8 text-xl max-w-2xl mx-auto">
             We aim to empower individuals and businesses by delivering tailored
