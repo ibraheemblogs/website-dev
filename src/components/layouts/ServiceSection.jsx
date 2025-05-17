@@ -12,7 +12,7 @@ const ServiceSection = ({ headerText }) => {
     {
       icon: <ProductDevIcon />,
       title: "Sharia Product Development",
-      link: "product-dev",
+      link: "product-development",
       description:
         "Our product services help financial institutions create and structure Sharia-compliant financial products.",
     },
@@ -26,7 +26,7 @@ const ServiceSection = ({ headerText }) => {
     {
       icon: <TrainingIcon />,
       title: "Islamic Finance Training",
-      link: "training",
+      link: "finance-training",
       description:
         "We give customized trainings for different levels and roles with practical workshops on Islamic financial operations.",
     },

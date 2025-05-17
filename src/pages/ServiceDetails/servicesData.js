@@ -10,8 +10,8 @@ export const servicesData = [
       id: "product-development",
       title: "Sharia Product Development",
       image: ProductDevelopment,
-      description:
-        "Our product development services help financial institutions create and structure Sharia-compliant financial products:",
+      showSubtitle: true,
+      description: "Our product development services help financial institutions create and structure Sharia-compliant financial products:",
       content: [
         {
           title:
@@ -47,16 +47,25 @@ export const servicesData = [
     {
       id: "advisory",
       title: "Sharia Advisory",
-      description:
-        "Our advisory services provide guidance on Sharia compliance for financial institutions:",
       image: Advisory,
+      showSubtitle: true,
+      description: "Our Sharia Advisory services are designed to provide comprehensive, expert guidance to ensure that your business operates in alignment with Islamic principles, whether you are managing daily operations, or enhancing governance structures, here's an expanded look at what we provide:",
       content: [
         {
-          title: "Sharia advisory board services",
+          title: "Regular Consultation on Sharia-Related Matters:",
+          details: [
+            "Continuous access to Sharia experts for addressing questions, resolving uncertainties, and ensuring compliance across all business activities.",
+            "Timely updates on emerging trends, interpretations, and developments in Islamic finance and Sharia compliance."
+          ],
+        },
+        {
+          title: "Advisory on Daily Operational Issues: ",
+          sideDetails: "including staff policies, risk assessment, etc.",
           details: [],
         },
         {
-          title: "Compliance guidance and ongoing support",
+          title: "Support for Sharia Governance Framework Development: ",
+          sideDetails: "including framework to ensure transparency, accountability, and ethical integrity.",
           details: [],
         },
       ],
@@ -64,48 +73,100 @@ export const servicesData = [
     {
       id: "finance-training",
       title: "Islamic Finance Training",
-      description:
-        "Comprehensive training programs for institutions and professionals:",
       image: FinanceTraining,
+      showSubtitle: false,
+      description: "Our comprehensive training programs develop expertise in Islamic finance:",
       content: [
         {
-          title: "Islamic finance fundamentals",
+          title: "Customized training modules for different organizational levels and roles:",
+          details: [
+            "Continuous access to Sharia experts for addressing questions, resolving uncertainties, and ensuring compliance across all business activities.",
+            "Timely updates on emerging trends, interpretations, and developments in Islamic finance and Sharia compliance."
+          ],
+        },
+        {
+          title: "Practical workshops on Islamic banking products and operations.",
           details: [],
         },
         {
-          title: "Advanced courses for professionals",
+          title: "Certification programs in Islamic finance fundamentals.",
           details: [],
         },
+        {
+          title: "Specialized courses on Sukuk, Takaful, and Islamic capital markets.",
+          details: [],
+        },
+        {
+          title: "Interactive case studies and real-world applications.",
+          details: [],
+        }, 
       ],
     },
     {
       id: "audit",
       title: "Sharia Compliance Audit",
-      description: "Thorough audit services to ensure Sharia compliance:",
       image: Audit,
+      showSubtitle: false,
+      description: "We provide a meticulous review of your operations, contracts, and products to ensure they meet Islamic principles. By combining thorough assessments with actionable recommendations. Here's a detailed breakdown of what we offer:",
       content: [
         {
-          title: "Comprehensive Sharia audit processes",
+          title: "Regular Sharia Compliance Audits of Operations and Processes",
+          details: ["Objective Audit: We conduct periodic audits to assess whether your business operations and workflows align with Sharia principles.",
+            "End-to-End Evaluation: Our audits cover all aspects of your operations, from procurement and financing to service delivery and customer interactions.",
+            "Tailored Frequency: Audits can be scheduled regularly (quarterly, biannually, or annually) to maintain ongoing compliance"
+          ],
+        },
+        {
+          title: "Review of contracts and documentation for Sharia compliance",
           details: [],
         },
         {
-          title: "Compliance verification and reporting",
+          title: "Assessment of product implementation and execution.",
           details: [],
         },
+        {
+          title: "Identification of potential Sharia compliance risks",
+          details: [],
+        },
+        {
+          title: "Detailed audit reports with recommendations for improvement",
+          details: [],
+        },
+        
       ],
     },
     {
       id: "research",
       title: "Academic and Industry Research",
-      description: "Cutting-edge research on Islamic finance:",
+      showSubtitle: false,
       image: Research,
+      description: "We provide deep insights into Islamic finance trends and developments in the following ways:",
       content: [
         {
-          title: "Academic research partnerships",
+          title: "Comprehensive market research and analysis of Islamic finance sectors:",
+          details: [
+            "This includes banking, Takaful (Islamic insurance), Sukuk (Islamic bonds), and Islamic fintech.",
+            "Market Dynamics: Analyze market size, growth trends, consumer preferences, and regulatory landscapes."
+        ],
+        },
+        {
+          title: "Academic research on emerging Islamic finance topics and innovations.",
           details: [],
         },
         {
-          title: "Industry trend analysis",
+          title: "Industry trend analysis and future outlook reports.",
+          details: [],
+        },
+        {
+          title: "Comparative studies of Islamic finance practices across different jurisdictions.",
+          details: [],
+        },
+        {
+          title: "Publication of research papers and industry insights.",
+          details: [],
+        },
+        {
+          title: "Collaboration with academic institutions and research centers.",
           details: [],
         },
       ],
@@ -113,16 +174,31 @@ export const servicesData = [
     {
       id: "certification",
       title: "Sharia Certification",
-      description:
-        "Official certification for financial products and services:",
       image: Certification,
+      showSubtitle: false,
+      description: "Our Sharia certification services ensure comprehensive business compliance:",
       content: [
         {
-          title: "Certification process and standards",
+          title: "Comprehensive Sharia review of business practices and operations:",
+          details: [
+            "This includes Core Compliance Checks: assessing adherence to key principles such as financial transactions, revenue sources, investment activities, and business partnerships to ensure they are free from Riba, Gharar, and prohibited elements.",
+            "We offer recommendations to restructure or enhance your offerings to meet Islamic requirements while remaining commercially viable."
+          ],
+        },
+        {
+          title: "Business contract and agreement verification.",
           details: [],
         },
         {
-          title: "Ongoing compliance monitoring",
+          title: "Regular monitoring and compliance audits.",
+          details: [],
+        },
+        {
+          title: "Documentation review and Sharia certification issuance",
+          details: [],
+        },
+        {
+          title: "Guidance on Sharia compliance improvements",
           details: [],
         },
       ],
