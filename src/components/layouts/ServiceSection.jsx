@@ -12,36 +12,42 @@ const ServiceSection = ({ headerText }) => {
     {
       icon: <ProductDevIcon />,
       title: "Sharia Product Development",
+      link: "product-dev",
       description:
         "Our product services help financial institutions create and structure Sharia-compliant financial products.",
     },
     {
       icon: <ShariaCompliantIcon />,
       title: "Sharia Advisory",
+      link: "advisory",
       description:
         "We provide regular consultation on Sharia-related matters and guidance on daily operational issues.",
     },
     {
       icon: <TrainingIcon />,
       title: "Islamic Finance Training",
+      link: "training",
       description:
         "We give customized trainings for different levels and roles with practical workshops on Islamic financial operations.",
     },
     {
       icon: <AuditIcon />,
       title: "Sharia Audit",
+      link: "audit",
       description:
         "We verify adherence to Islamic principles and review contracts and documentation for Sharia compliance.",
     },
     {
       icon: <ResearchIcon />,
       title: "Academic & Industry Research",
+      link: "research",
       description:
         "We help institutions conduct cutting-edge research and develop innovative solutions to real-world challenges.",
     },
     {
       icon: <ShariaCertificationIcon />,
       title: "Sharia Certification",
+      link: "certification",
       description:
         "We conduct thorough Sharia forensics to ensure your products and services are compliant with Sharia standards.",
     },

@@ -25,7 +25,7 @@ const Navigation = () => {
           <div
             className={`${
               isMenuOpen ? "flex" : "hidden"
-            } md:flex flex-col md:flex-row absolute md:static top-20 left-0 w-full md:w-auto bg-white md:bg-transparent py-4 md:py-0 px-4 md:px-0 shadow-lg md:shadow-none items-start md:items-center gap-4 md:gap-8 z-50`}
+            } md:flex flex-col md:flex-row absolute md:static top-18 left-0 w-full md:w-auto bg-white md:bg-transparent py-4 md:py-0 px-4 md:px-0 shadow-lg md:shadow-none items-start md:items-center gap-4 md:gap-8 z-50`}
           >
             <NavLink
               to="/"

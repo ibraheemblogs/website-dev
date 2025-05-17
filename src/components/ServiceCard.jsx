@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router";
 
-const ServiceCard = ({ icon, title, description }) => {
+const ServiceCard = ({ icon, title, description, link }) => {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md">
       {icon}
@@ -12,9 +13,12 @@ const ServiceCard = ({ icon, title, description }) => {
       >
         {description}
       </p>
-      <button className="text-green-600 hover:text-blue-800">
+      <Link
+        className="text-green-600 hover:text-blue-800"
+        to={`/services/${link}`}
+      >
         Learn More →
-      </button>
+      </Link>
     </div>
   );
 };
