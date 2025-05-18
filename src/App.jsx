@@ -51,9 +51,12 @@ const App = () => {
             growth for businesses and individuals.
           </p>
           <div className="text-center">
-            <button className="bg-yellow-500 px-8 py-3 rounded-md hover:bg-yellow-600">
+            <Link
+              to={"/contact-us"}
+              className="bg-yellow-500 px-8 py-3 rounded-md hover:bg-yellow-600"
+            >
               Get Started
-            </button>
+            </Link>
           </div>
         </div>
         <div className="md:pr-20 md:pl-20 pt-8 px-3">

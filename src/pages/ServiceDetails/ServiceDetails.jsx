@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PageLayout from "../../components/layouts/PageLayout";
 import { servicesData } from "./servicesData";
-import { useLocation, useNavigate } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 import ArrowLeft from "../../components/svg-components/ArrowLeft";
 import ArrowRight from "../../components/svg-components/ArrowRight";
 import ArrowBlock from "../../components/svg-components/ArrowBlock";
@@ -145,9 +145,14 @@ const ServiceDetails = () => {
                 ))}
               </ul>
 
-              <button className="mt-8 bg-amber-500 hover:bg-amber-600 text-white font-medium py-3 px-6 rounded-md transition">
-                Get This Service
-              </button>
+              <div className="mt-8">
+                <Link
+                  to={"/contact-us"}
+                  className="bg-amber-500 hover:bg-amber-600 text-white font-medium py-3 px-6 rounded-md transition"
+                >
+                  Get This Service
+                </Link>
+              </div>
             </div>
           )}
         </div>
