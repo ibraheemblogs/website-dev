@@ -5,7 +5,6 @@ import WhyShariaLabsSmall from "./assets/Frame-8470831.png";
 import HeaderPicture from "./assets/Frame-239412.png";
 import ServiceSection from "./components/layouts/ServiceSection";
 import "./App.css";
-import TextFadeSwitcher from "./components/text-fade-switcher/TextFadeSwitcher";
 import { Link } from "react-router";
 import PageLayout from "./components/layouts/PageLayout";
 
@@ -51,12 +50,13 @@ const App = () => {
             growth for businesses and individuals.
           </p>
           <div className="text-center">
-            <Link
-              to={"/contact-us"}
+            <a
+              href="https://form.jotform.com/260001568851049"
+              target="_blank"
               className="bg-yellow-500 px-8 py-3 rounded-md hover:bg-yellow-600"
             >
-              Get Started
-            </Link>
+              Subscribe to Our Newsletter
+            </a>
           </div>
         </div>
         <div className="md:pr-20 md:pl-20 pt-8 px-3">
@@ -84,8 +84,8 @@ const App = () => {
                 products, services, and processes. We aim to empower individuals
                 and businesses by delivering tailored solutions grounded in
                 Islamic principles.{" "}
-                <span className="text-green-500">
-                  <a href="">Read more</a>
+                <span className="text-green-500 hover:text-green-200">
+                  <Link to="/about">Read more</Link>
                 </span>
               </p>
 
