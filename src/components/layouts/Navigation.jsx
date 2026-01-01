@@ -71,6 +71,13 @@ const Navigation = () => {
             >
               Blog
             </a>
+            <a
+              href="https://form.jotform.com/260001568851049"
+              className="text-gray-600 hover:text-gray-900 w-full md:w-auto"
+              target="_blank"
+            >
+              Subscribe to Our Newsletter
+            </a>
             <NavLink
               to="/contact-us"
               className={({ isActive }) =>
