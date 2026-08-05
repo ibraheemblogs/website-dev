@@ -65,6 +65,19 @@ const Navigation = () => {
               Services
             </NavLink>
 
+            <NavLink
+              to="/course"
+              className={({ isActive }) =>
+                `${
+                  isActive
+                    ? "text-green-600 font-semibold"
+                    : "text-gray-600 hover:text-gray-900"
+                } w-full md:w-auto`
+              }
+            >
+              Course
+            </NavLink>
+
             <a
               href="https://www.linkedin.com/company/sharia-labs/posts"
               className="text-gray-600 hover:text-gray-900 w-full md:w-auto"
