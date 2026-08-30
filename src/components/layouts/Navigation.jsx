@@ -66,7 +66,7 @@ const Navigation = () => {
             </NavLink>
 
             <NavLink
-              to="https://course.sharialabs.com/"
+              to="https://course.sharialabs.com"
               target="_blank"
               className={({ isActive }) =>
                 `${
